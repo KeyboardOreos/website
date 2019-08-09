@@ -18,3 +18,15 @@ h1{
     font-family: Helvetica,sans-serif;
     margin: 5em 10em;
 }
+header {
+    background: #999
+    color: white;
+    margin: 0;
+    block
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    margin: 0;
+}
