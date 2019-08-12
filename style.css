@@ -13,39 +13,123 @@
 /* BASE RULES */
 /**************/
 
+body {
+  padding-top: 80px;
+  text-align: center;
+  font-family: $Roboto;
+  background: white;
+  background-size: cover;
+}
+
+h1 {
+  
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-family: $Roboto;
+}
+h2 {
+  font-size: 20px;
+}
+span {
+  background: #fd0;
+}
+
+.nav-bar {
+  text-align:left;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+  padding: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #5f6368; 
+  background: #fff; 
+  height:; 
+}
+
+li {
+  font-family: 'Roboto', sans-serif; 
+  display: inline; 
+  padding: 1em; 
+  margin-left: auto; 
+   
+}
+
+body {
+ padding-top: 1px;  
+ font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+.author{
+  margin: 0px 0px 16px;
+}
+a {
+  color: #5f6368;
+  font-family: 'Roboto';
+  padding: 1px 0px 1px; 
+  margin: 10px; 
+  font-size: 14px; 
+  text-decoration: none;
+}
+
+.paragraph {
+  font-family: 'Roboto'; 
+  color: #5f6368;
+  margin-top: 20px; 
+  margin-left: 10em; 
+  max-width: 538;
+  max-height: 782;
+  margin: auto;
+  width: 900px;
+
+}
+
+.random {
+ 
+padding: 0px 10px 0px 0px ;
+font-family: 'Product sans';
+font-size: 22px
+
+}
+
+.avatar {
+float: left;
+padding:5px;
+margin: 15px 5px;
+}
+
 html {
   font-size: 100%;
 }
 
 body {
-    background: $white;
-  font: 18px/1.4 $helvetica;
+  background: $white;
+  font: 18px/1.4 $Roboto;
   color: $darkGray;
 }
+
 .container {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  font-size: 16px;
+  font-family: Roboto,Arial,Helvetica,sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $Roboto;
   color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 10px 0 15px;
   padding: 0;
 
   @include mobile {
     line-height: 1.4;
   }
-}
 
 h1 {
-  font-size: 30px;
-  a {
+  font-size: 56px;
+
+a {
     color: inherit;
   }
 }
@@ -70,7 +154,7 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-    cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
@@ -90,7 +174,11 @@ ol {
 }
 
 ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+   margin-left: 20px;
+    color: $darkGray;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 ul ul, ol ul {
@@ -150,14 +238,12 @@ img {
 //
 
 .wrapper-masthead {
-  background-color: $lightGray;
-  #margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .masthead {
-  background-color: $lightGray;
-  #padding: 20px 0;
-  border-bottom: 2px solid $lightGray;
+  padding: 20px 0;
+  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -210,19 +296,13 @@ img {
     margin: 3px 0;
   }
 }
-.navigation nav{
-  float: left;
-  background-color: $lightGray;
-  margin-top: 1px;
-  padding: 1em;
-}
+
 nav {
-  width: 100%;
-  float: left;
+  float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-  margin-bottom: 5px;
+
   @include mobile {
     float: none;
     margin-top: 9px;
@@ -231,12 +311,8 @@ nav {
   }
 
   a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
+   font-size: 20px;
+   font-family: Roboto;
     @include mobile {
       margin: 0 10px;
       color: $blue;
@@ -251,11 +327,13 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+  font-family: $Roboto;
 }
 
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
+  font-family: $Roboto;
 }
 
 .post {
@@ -266,6 +344,7 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+    font-family: $Roboto;
   }
 
   .comments {
@@ -275,6 +354,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    font-family: sans-serif;
   }
 }
 
@@ -286,23 +366,8 @@ nav {
 }
 
 footer {
-background-color: $lightGray;
-position: absolute;
-text-align: center;
-vertical-align: middle;
-background-attachment: scroll;
-left: 0;
-bottom: 0;
-width: 100%;
-height: 60px;
-/* Height of the footer */
-position: fixed;
-}
-
-.footer-contents {
-height: 60px;
-margin: auto;
-padding: 10px 10px;
+  padding: 20px 0;
+  text-align: center;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
