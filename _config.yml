@@ -9,7 +9,7 @@ name: Cody
 description: Random Articles
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: D:/website/images/myself.jpg
+avatar: /images/myself.jpg
 
 #
 # Flags below are optional
