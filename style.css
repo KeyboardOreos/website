@@ -21,12 +21,6 @@ body {
   background-size: cover;
 }
 
-h1 {
-  
-  font-size: 56px;
-  margin-bottom: 10px;
-  font-family: $Roboto;
-}
 h2 {
   font-size: 20px;
 }
@@ -40,8 +34,7 @@ span {
   padding: 1em;
   font-family: 'Roboto', sans-serif;
   color: #5f6368; 
-  background: #fff; 
-  height:; 
+  background: #fff;  
 }
 
 li {
@@ -61,7 +54,7 @@ body {
 }
 a {
   color: #5f6368;
-  font-family: 'Roboto';
+  font-family:$Roboto;
   padding: 1px 0px 1px; 
   margin: 10px; 
   font-size: 14px; 
@@ -369,7 +362,7 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
