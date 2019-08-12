@@ -83,8 +83,7 @@ font-size: 22px
 
 .avatar {
 float: left;
-padding:15px 0px;
-margin: 15px;
+margin: 15px auto;
 
 }
 
@@ -119,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   @include mobile {
     line-height: 1.4;
   }
+}
 
 h1 {
   font-size: 56px;
@@ -261,6 +261,7 @@ img {
 
   @include mobile {
     margin: 3px 0;
+  }
 }
 
 nav {
@@ -274,6 +275,7 @@ nav {
     margin-top: 9px;
     display: block;
     font-size: 16px;
+  }
 }
 
 //
@@ -299,6 +301,7 @@ nav {
     font-size: 22px;
     font-style: italic;
   }
+}
 
   .comments {
     margin-top: 10px;
@@ -308,22 +311,19 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
-}
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
+  border-top: 2px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $black;
+  background-color: $white;
 }
 
 footer {
   margin: auto;
-  height: 60px;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   width: 100%;
 }
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
