@@ -97,7 +97,6 @@ body {
   font: 18px/1.4 $Roboto;
   color: $darkGray;
 }
-
 .container {
   margin: 0 auto;
   max-width: 740px;
@@ -261,7 +260,6 @@ img {
 
   @include mobile {
     margin: 3px 0;
-  }
 }
 
 nav {
@@ -275,11 +273,6 @@ nav {
     margin-top: 9px;
     display: block;
     font-size: 16px;
-  }
-
- 
-    }
-  }
 }
 
 //
@@ -289,13 +282,11 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
-  font-family: $Roboto;
 }
 
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
-  font-family: $Roboto;
 }
 
 .post {
@@ -306,7 +297,6 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
-    font-family: $Roboto;
   }
 
   .comments {
@@ -316,7 +306,6 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
-    font-family: sans-serif;
   }
 }
 
@@ -328,10 +317,11 @@ nav {
 }
 
 footer {
+  display: inline-block;
   padding: 20px 0;
   text-align: center;
 }
-}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
