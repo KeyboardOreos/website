@@ -327,14 +327,11 @@ nav {
     font-size: 15px;
   }
 .wrapper-footer {
-<<<<<<< HEAD:style.css
   margin-top: 50px;
   border-top: 50px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
-=======
   margin: auto auto 60px;
->>>>>>> fd3466d641df03fc5573ccb4d0a2e5e5f4ca4f0c:style.scss
 }
 .footer_contents {
 height: 60px;
@@ -355,11 +352,9 @@ height: 60px;
 position: fixed;
 }
 footer {
-<<<<<<< HEAD:style.css
   background: lightblue;
   text-align: center;
   padding: 10px;
-=======
   box-shadow: 0 0 6px 2px rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
   margin: auto;
   position: absolute;
@@ -373,7 +368,6 @@ footer {
   height: 60px;
   /* Height of the footer */
   position: fixed;
->>>>>>> fd3466d641df03fc5573ccb4d0a2e5e5f4ca4f0c:style.scss
 }
 
 .footer-contents {
