@@ -15,7 +15,7 @@
 
 body {
   padding-top: 80px;
-  text-align: center;
+  text-align: left;
   font-family: $Roboto;
   background: white;
   background-size: cover;
@@ -36,29 +36,38 @@ span {
   color: #5f6368; 
   background: #fff;
 
+  @include mobile {
+    width: 100;
+  }
+
 }
 
 li {
   font-family: 'Roboto', sans-serif; 
   display: inline; 
-  padding: 1px; 
+  padding: 1px;
      
 }
 
 body {
  padding-top: 1px;  
- font-family: Roboto,Arial,Helvetica,sans-serif;
+ font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-.author{
+.author {
   margin: 0px 0px 16px;
 }
 a {
+  text-align: right;
   color: #5f6368;
   font-family:$Roboto;
   padding: 1px 0px 1px; 
   margin: 10px; 
   font-size: 14px; 
   text-decoration: none;
+
+  @include mobile {
+    margin: 5px;
+  }
 }
 
 .paragraph {
@@ -77,19 +86,24 @@ a {
  
 padding: 0px 10px 0px 0px ;
 font-family: 'Product sans';
-font-size: 22px
+font-size: 22px;
+
+  @include mobile {
+    padding: 0;
+    margin: 0;
+  }
 
 }
 
 .avatar {
 float: left;
-padding:15px 0px;
-margin: 15px;
+margin: 15px auto;
 
 }
 
 html {
   font-size: 100%;
+  background-color: $white;
 }
 
 body {
@@ -103,7 +117,7 @@ body {
   padding: 50px 10px;
   width: 100%;
   font-size: 16px;
-  font-family: Roboto,Arial,Helvetica,sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -118,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   @include mobile {
     line-height: 1.4;
   }
+}
 
 h1 {
   font-size: 56px;
@@ -213,6 +228,7 @@ img {
 
   @include mobile {
     text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -260,6 +276,7 @@ img {
 
   @include mobile {
     margin: 3px 0;
+  }
 }
 
 nav {
@@ -269,10 +286,11 @@ nav {
   font-size: 18px;
 
   @include mobile {
-    float: none;
+    float: right;
     margin-top: 9px;
-    display: block;
+    display: inline-block;
     font-size: 16px;
+  }
 }
 
 //
@@ -298,6 +316,7 @@ nav {
     font-size: 22px;
     font-style: italic;
   }
+}
 
   .comments {
     margin-top: 10px;
@@ -307,13 +326,15 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
-}
-
 .wrapper-footer {
+<<<<<<< HEAD:style.css
   margin-top: 50px;
   border-top: 50px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+=======
+  margin: auto auto 60px;
+>>>>>>> fd3466d641df03fc5573ccb4d0a2e5e5f4ca4f0c:style.scss
 }
 .footer_contents {
 height: 60px;
@@ -334,11 +355,32 @@ height: 60px;
 position: fixed;
 }
 footer {
+<<<<<<< HEAD:style.css
   background: lightblue;
   text-align: center;
   padding: 10px;
+=======
+  box-shadow: 0 0 6px 2px rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  background-attachment: scroll;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* Height of the footer */
+  position: fixed;
+>>>>>>> fd3466d641df03fc5573ccb4d0a2e5e5f4ca4f0c:style.scss
 }
 
+.footer-contents {
+  height: 60px;
+  margin: auto;
+  padding: 8px;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
