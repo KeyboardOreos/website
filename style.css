@@ -98,9 +98,9 @@ body {
   color: $darkGray;
 }
 .container {
-  margin: 0 auto;
+  margin: 50px;
   max-width: 740px;
-  padding: 0 10px;
+  padding: 50px 10px;
   width: 100%;
   font-size: 16px;
   font-family: Roboto,Arial,Helvetica,sans-serif;
@@ -311,15 +311,32 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
+  border-top: 50px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
 }
-
+.footer_contents {
+height: 60px;
+margin: auto;
+padding: 8px;
+}
+.footer {
+background-color: #403020;
+position: absolute;
+text-align: center;
+vertical-align: middle;
+background-attachment: scroll;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 60px;
+/* Height of the footer */
+position: fixed;
+}
 footer {
-  display: inline-block;
-  padding: 20px 0;
+  background: lightblue;
   text-align: center;
+  padding: 10px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

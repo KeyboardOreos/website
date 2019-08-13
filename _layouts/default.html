@@ -14,8 +14,8 @@
     <link rel="shortcut icon" type="image/png" href="/images/myself.jpg"/>
     <!--<script type="text/javascript" src="fancyhover.js"></script>-->
   <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-
   </head>
+
 <img class="avatar" src="/images/myself.jpg" height="60px" width="60px">
     <div class="random"></div>
       <ul class="nav-bar">
@@ -25,21 +25,17 @@
         <li><a href="{{ site.baseurl }}/about">About</a></li>
       </ul>
   </div>
-<body>
-  <div>
-    </div>
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+  <body>
+    <div>
+      <div id="main" role="main" class="container">{{ content }}</div>
+      <div class="wrapper-footer">
+        <div class="container">
+  <footer>
+            {% include svg-icons.html %}
+  </footer>
+        </div>
       </div>
-    </div>
 
-    {% include analytics.html %}
-  </body>
+      {% include analytics.html %}
+    </body>
 </html>
